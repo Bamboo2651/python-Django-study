@@ -77,3 +77,13 @@ class Page(models.Model):
 
 
  日記追加画面
+
+
+
+
+
+
+参考動画
+ https://youtu.be/r9QUdzVGHJU?si=ygOr0dDQ0E35cCQ3
+
+03/26 0:41:05まで次回0:41:10 から
