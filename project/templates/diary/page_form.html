@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日記追加画面</title>
+</head>
+<body>
+    <h2>日記追加</h2>
+    <form method="POST" action="">
+        {% csrf_token %} 
+        {{ form.as_p }}
+        <button type="submit">追加</button>
+    </form>
+</body>
+</html>

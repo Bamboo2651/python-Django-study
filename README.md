@@ -74,3 +74,6 @@ class Page(models.Model):
  python manage.py makemigrations
  python manage.py sqlmigrate diary 0001
  python manage.py migrate
+
+
+ 日記追加画面
