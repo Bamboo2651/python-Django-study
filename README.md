@@ -52,3 +52,25 @@ class IndexView(View):
 index = IndexView.as_view()
 
 
+SQLite リレーショナルデータベース
+UUID ほかの識別子とはかぶらない識別子を生成する
+from django.db import models
+import uuid 
+
+class Page(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4,editable=False,verbose_name="ID")
+    title =models.CharField(max_length=100,verbose_name="タイトル")
+    body = models.TextField(max_length=2000,verbose_name="内容")
+    page_date =models.DateField(verbose_name="日付")
+    created_at = models.DateTimeField(auto_now_add=True,verbose_name="作成日付")
+    updated_at = models.DateTimeField(auto_now=True,verbose_name="更新日付")
+
+    def __str__(self):
+        return self.title
+ほかにもいろんなフィールドがある
+
+
+マイグレーション用のファイルを作るコマンド
+ python manage.py makemigrations
+ python manage.py sqlmigrate diary 0001
+ python manage.py migrate
