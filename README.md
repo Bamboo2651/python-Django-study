@@ -1,6 +1,6 @@
 # Django 基礎学習まとめ（詳細版）
 
-> 📹 参考動画: https://youtu.be/r9QUdzVGHJU?si=ygOr0dDQ0E35cCQ3
+> 📹 参考動画: https://youtu.be/r9QUdzVGHJU?si=ygOr0dDQ0E35cCQ3 \
 > ✅ 視聴進捗: `0:41:10` まで完了（次回 `0:41:10` から再開）
 
 ---
